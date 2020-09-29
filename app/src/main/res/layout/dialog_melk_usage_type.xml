@@ -1,0 +1,223 @@
+<!--<layout>-->
+
+    <!--<data>-->
+
+        <!--<variable-->
+            <!--name="melkUsageType"-->
+            <!--type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />-->
+    <!--</data>-->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_melk_usage_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/melk_user_type_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_usage_type_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:minWidth="144dp"
+                    android:minHeight="1dp"
+                    android:orientation="vertical">
+                    <!--<Space-->
+                    <!--android:layout_width="144dp"-->
+                    <!--android:layout_height="1dp" />-->
+
+                    <ToggleButton
+                        android:id="@+id/tgb_official_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_official"
+                        android:textOn="@string/str_official" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_commercial_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_commercial"
+                        android:textOn="@string/str_commercial" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_industrial_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_idustrial"
+                        android:textOn="@string/str_idustrial" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_clinic_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_clinic"
+                        android:textOn="@string/str_clinic" />
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_sports_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_sports"
+                        android:textOn="@string/str_sports" />
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_agriculture_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_agriculture"
+                        android:textOn="@string/str_agriculture" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_usage_type_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:minWidth="144dp"
+                    android:minHeight="1dp"
+                    android:orientation="vertical">
+
+                    <!--<Space-->
+                    <!--android:layout_width="144dp"-->
+                    <!--android:layout_height="1dp" />-->
+
+                    <ToggleButton
+                        android:id="@+id/tgb_residential_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_residential"
+                        android:textOn="@string/str_residential" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_administrative_position_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_administrative_position"
+                        android:textOn="@string/str_administrative_position" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_resident_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_resident"
+                        android:textOn="@string/str_resident" />
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_animal_husbandry_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_animal_husbandry"
+                        android:textOn="@string/str_animal_husbandry" />
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_educational_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_educational"
+                        android:textOn="@string/str_educational" />
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_store_usage_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_store"
+                        android:textOn="@string/str_store" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_melk_usage_type"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+
+<!--</layout>-->

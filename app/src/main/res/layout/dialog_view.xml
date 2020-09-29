@@ -1,0 +1,180 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="view"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/view_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_view_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_lake_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbLakeViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_lake"
+                        android:textOn="@string/str_lake" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_jangle_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbJangleViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_jangle"
+                        android:textOn="@string/str_jangle" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_city_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbCityViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_city"
+                        android:textOn="@string/str_city" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_panorama_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbPanoramaViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_panorama"
+                        android:textOn="@string/str_panorama" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_park_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbParkViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_park"
+                        android:textOn="@string/str_park" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_view_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_mountain_room_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbMountainViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_mountain_ly"
+                        android:textOn="@string/str_mountain_ly" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_sea_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbSeaViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_sea"
+                        android:textOn="@string/str_sea" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_river_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbRiverViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_river"
+                        android:textOn="@string/str_river" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_sky_view"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={view.tgbSkyViewValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_sky"
+                        android:textOn="@string/str_sky" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+</layout>

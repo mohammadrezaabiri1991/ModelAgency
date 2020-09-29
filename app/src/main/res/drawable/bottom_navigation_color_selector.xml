@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:color="@color/colorAccent"/>
+    <item android:color="@color/colorBnvIcon"/>
+
+    <!--<item android:color="#8C9EFF" android:state_checked="true" />-->
+    <!-- This is the default text color -->
+    <!--<item android:color="#FFFFFF" />-->
+</selector>
+
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+        <!--<item android:color="@color/colorAccent" android:state_enabled="true" />-->
+        <!--<item android:color="@color/colorBnvIcon" android:state_enabled="false" />-->
+    <!--</selector>-->

@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\MohamadReza\\Downloads\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lt\\values-lt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\MohamadReza\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\1849867f1e0d236ff579f5738d0cb0ff\\res\\values-lt\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "217",
+                        "endOffsets": "502"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "217",
+                        "endOffsets": "318"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\MohamadReza\\Downloads\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\res\\merged\\release\\values-lt\\values-lt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\MohamadReza\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\1849867f1e0d236ff579f5738d0cb0ff\\res\\values-lt\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "217",
+                        "endOffsets": "502"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "217",
+                        "endOffsets": "318"
+                    }
+                }
+            ]
+        }
+    ]
+}

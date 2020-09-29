@@ -1,0 +1,214 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="melkDocument"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_type_of_melk_document"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/type_of_melk_document_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_type_of_melk_document_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_personal_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbPersonalTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_personal"
+                        android:textOn="@string/str_personal" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_endowments_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbEndowmentsTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_endowments"
+                        android:textOn="@string/str_endowments" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_commercial_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbCommercialTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_commercial"
+                        android:textOn="@string/str_commercial" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_shari_ruler_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbShariRulerTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_shari_ruler"
+                        android:textOn="@string/str_shari_ruler" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_organizational_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbOrganizationalTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/sr_organizational"
+                        android:textOn="@string/sr_organizational" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_official_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbOfficalTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_official"
+                        android:textOn="@string/str_official" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_type_of_melk_document_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_cooperative_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbCooperativeTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_cooperative"
+                        android:textOn="@string/str_cooperative" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_proxy_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbProxyTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_proxy"
+                        android:textOn="@string/str_proxy" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_letter_of_credit_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbLetterOfCreditTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_letter"
+                        android:textOn="@string/str_letter" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_jointly_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbJointlyTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_jointly"
+                        android:textOn="@string/str_jointly" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_residential_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbResidentialTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_residential"
+                        android:textOn="@string/str_residential" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_industrial_type_of_melk_document"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={melkDocument.tgbIndustrialTypeOfMelkDocumentValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_industrial"
+                        android:textOn="@string/str_industrial" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_type_of_melk_document"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+</layout>

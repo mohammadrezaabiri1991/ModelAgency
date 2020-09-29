@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context="com.hekatomsoft.androidcor.bottombarfragment.googlemap.GoogleMapFragment">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/parentFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/design_bottom_sheet"
+        app:layout_anchorGravity="bottom|right"
+        app:srcCompat="@drawable/ic_pencil_edit" />
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|right"
+        app:layout_anchor="@+id/design_bottom_sheet">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/margin16dp"
+            android:src="@android:drawable/ic_menu_compass"
+            android:visibility="invisible"
+            app:backgroundTint="#11aaff"
+            app:fabSize="mini"
+            app:layout_anchor="@+id/design_bottom_sheet" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/margin16dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:visibility="invisible"
+            app:backgroundTint="#11aaff"
+            app:fabSize="mini"
+            app:layout_anchor="@+id/design_bottom_sheet" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/margin16dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:visibility="invisible"
+            app:backgroundTint="#11aaff"
+            app:fabSize="mini"
+            app:layout_anchor="@+id/design_bottom_sheet" />
+    </FrameLayout>
+
+    <include layout="@layout/bottom_sheet_root" />
+
+
+</android.support.design.widget.CoordinatorLayout>

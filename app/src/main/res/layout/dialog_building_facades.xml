@@ -1,0 +1,179 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="buildingFacades"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_building_facades"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/building_facades_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_building_facades_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_konteks_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbKonteksBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_konteks"
+                        android:textOn="@string/str_konteks" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_aluminum_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbAluminumBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_aluminum"
+                        android:textOn="@string/str_aluminum" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_brick_facade_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbBrickBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_brick"
+                        android:textOn="@string/str_brick" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_cement_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbCementBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_cement"
+                        android:textOn="@string/str_cement" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_wood_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbWoodBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_wood"
+                        android:textOn="@string/str_wood" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_building_facades_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_stone_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbStoneBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_stone"
+                        android:textOn="@string/str_stone" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_ceramic_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbCeramicBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_ceramic"
+                        android:textOn="@string/str_ceramic" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_glass_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbGlassBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_glass"
+                        android:textOn="@string/str_glass" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_composite_building_facades"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={buildingFacades.tgbCompositeBuildingFacadesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_composite"
+                        android:textOn="@string/str_composite" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_building_facades"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+</layout>

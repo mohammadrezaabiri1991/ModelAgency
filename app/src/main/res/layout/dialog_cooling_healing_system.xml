@@ -1,0 +1,180 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="coolingHealing"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_cooling_healing_system"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/ch_sytem_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="@dimen/margin16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cooling_healing_system_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_package_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbPackageCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_package"
+                        android:textOn="@string/str_package" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_heater_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbHeaterCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_heater"
+                        android:textOn="@string/str_heater" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_chiller_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbChilerCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_chiller"
+                        android:textOn="@string/str_chiller" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_water_cooler_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbWaterCoolerCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_water_cooler"
+                        android:textOn="@string/str_water_cooler" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_fan_coil_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbFanCoilCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_fan_coil"
+                        android:textOn="@string/str_fan_coil" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cooling_healing_system_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_central_engine_room_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbCentralEngineRoomCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_central_engine"
+                        android:textOn="@string/str_central_engine" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_floor_heating_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbFloorHeatingCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_floor_heating"
+                        android:textOn="@string/str_floor_heating" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_air_conditioner_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbAirConditionerCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_air_conditioner"
+                        android:textOn="@string/str_air_conditioner" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_gas_cooler_cooling_healing"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={coolingHealing.tgbGasCoolerCoolingHealingSystemValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_gas_cooler"
+                        android:textOn="@string/str_gas_cooler" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_cooling_healing_system"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+</layout>

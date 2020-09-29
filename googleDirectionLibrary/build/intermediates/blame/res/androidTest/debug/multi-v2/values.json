@@ -1,0 +1,86 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\MohamadReza\\Downloads\\Android-GoogleDirectionLibrary-master\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\MohamadReza\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\79314a45abb76f4b1905a28e1f79f6d7\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "276,439",
+                        "endColumns": "63,166",
+                        "endOffsets": "339,605"
+                    },
+                    "to": {
+                        "startLines": "15,16",
+                        "startColumns": "4,4",
+                        "startOffsets": "1452,1520",
+                        "endColumns": "67,166",
+                        "endOffsets": "1515,1682"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\MohamadReza\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\091ddb4ac0517d9745349d4f28b0511d\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,7,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,93,301,461",
+                        "endLines": "2,6,9,14",
+                        "endColumns": "37,12,12,12",
+                        "endOffsets": "88,296,456,708"
+                    },
+                    "to": {
+                        "startLines": "14,17,21,24",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1414,1687,1895,2055",
+                        "endLines": "14,20,23,28",
+                        "endColumns": "37,12,12,12",
+                        "endOffsets": "1447,1890,2050,2302"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\MohamadReza\\Downloads\\Android-GoogleDirectionLibrary\\googleDirectionLibrary\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\MohamadReza\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\1849867f1e0d236ff579f5738d0cb0ff\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "276,439",
+                        "endColumns": "63,166",
+                        "endOffsets": "339,605"
+                    },
+                    "to": {
+                        "startLines": "15,16",
+                        "startColumns": "4,4",
+                        "startOffsets": "1452,1520",
+                        "endColumns": "67,166",
+                        "endOffsets": "1515,1682"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\MohamadReza\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\bf0b02852479188b6d914142244e11ab\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,7,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,93,301,461",
+                        "endLines": "2,6,9,14",
+                        "endColumns": "37,12,12,12",
+                        "endOffsets": "88,296,456,708"
+                    },
+                    "to": {
+                        "startLines": "14,17,21,24",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1414,1687,1895,2055",
+                        "endLines": "14,20,23,28",
+                        "endColumns": "37,12,12,12",
+                        "endOffsets": "1447,1890,2050,2302"
+                    }
+                }
+            ]
+        }
+    ]
+}

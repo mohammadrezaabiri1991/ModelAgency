@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:elevation="4dp"
+    app:layout_behavior="com.hekatomsoft.androidcor.bottombarfragment.googlemap.LockableBottomSheetBehavior">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_header_bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ff4455"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+        >
+
+
+        <Button
+            android:id="@+id/btn_minimize_bts"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="@dimen/height_12_dp"
+            android:layout_marginLeft="@dimen/height_12_dp"
+            android:background="@drawable/back"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="@dimen/height_12_dp"
+            android:layout_marginLeft="@dimen/height_12_dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/enter_melk_info"
+            android:textColor="#fafafa"
+            tools:ignore="RtlHardcoded" />
+
+
+    </LinearLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ExpandableListView
+                android:id="@+id/recyclerView"
+                android:nestedScrollingEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_dialog_melk_gallary"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:padding="5dp"-->
+        <!--android:scaleType="centerInside" />-->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="UnknownId" />
+
+
+    <com.hekatomsoft.androidcor.zoomphotoview.src.main.java.com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/img_dialog_melk_gallary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="centerInside" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_header_dialog_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin8dp"
+        android:layout_marginRight="@dimen/margin8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_minimize_melk_gallary"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:background="@drawable/back" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/sp_toolbar_melk_gallary"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/more_icon"
+            android:entries="@array/array_sp_dialog_melk_gallary" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_footer_dialog_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_crop_melk_gallary"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:drawable/ic_menu_crop" />
+
+        <Button
+            android:id="@+id/btn_gallary_melk_gallary"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/btn_camera_melk_gallary"
+            android:layout_width="34dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:drawable/ic_menu_camera" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

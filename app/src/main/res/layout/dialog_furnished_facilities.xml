@@ -1,0 +1,242 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="furnishedFacilities"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_furnished_facilities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/furnished_facilities_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_furnished_facilities_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_refrigerator_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbRefrigeratorFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_refrigerator"
+                        android:textOn="@string/str_refrigerator" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_macro_wave_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbMacrowaveFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_microwave"
+                        android:textOn="@string/str_microwave" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_carpet_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbCarpeteFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_farsh"
+                        android:textOn="@string/str_farsh" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_chandelier_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbChandelierFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_chandelier"
+                        android:textOn="@string/str_chandelier" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_vacuum_cleaner_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbVacuumeCleanerFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_vacuum_cleaner"
+                        android:textOn="@string/str_vacuum_cleaner" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_dishwasher_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbDishwasherFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_dishwasher"
+                        android:textOn="@string/str_dishwasher" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_bed_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbBedFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_bed_room_flat"
+                        android:textOn="@string/str_bed_room_flat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_furnished_facilities_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_oven_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbOvenFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_oven"
+                        android:textOn="@string/str_oven" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_furniture_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbFurnitureFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_furniture"
+                        android:textOn="@string/str_furniture" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_television_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbTelevisionFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_television"
+                        android:textOn="@string/str_television" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_curtain_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbDishesCurtainFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_curtain"
+                        android:textOn="@string/str_curtain" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_otto_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbOttoFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_otto"
+                        android:textOn="@string/str_otto" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_washing_machine_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbWashingMachineFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_washing_machine"
+                        android:textOn="@string/str_washing_machine" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_dishes_furnished_facilities"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={furnishedFacilities.tgbDishesFurnishedFacilitiesValue}"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_dishes"
+                        android:textOn="@string/str_dishes" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_furnished_facilities"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+</layout>

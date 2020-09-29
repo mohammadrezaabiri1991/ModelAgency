@@ -1,0 +1,426 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="specialFeatures"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_special_features"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/special_feature_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_special_features_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_lobby_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbLobbySpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_lobby"
+                        android:textOn="@string/str_lobby" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_bathtub_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbBathtubSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_bath_room_van"
+                        android:textOn="@string/str_bath_room_van" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_swimming_pool_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbSwimmingPoolSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_swimming_pool"
+                        android:textOn="@string/str_swimming_pool" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_fireplace_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbFirePlaceSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_fire_place"
+                        android:textOn="@string/str_fire_place" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_children_play_space_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbChildrenPlaySpaceSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_children_play_space"
+                        android:textOn="@string/str_children_play_space" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_parking_remote_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbParkingRemoteSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_parking_remote"
+                        android:textOn="@string/str_parking_remote" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_central_vacuum_cleaner_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbCentralVacuumCleanerSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_central_vacuum"
+                        android:textOn="@string/str_central_vacuum" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_amphitheater_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbAmphitheaterSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_amphitheater"
+                        android:textOn="@string/str_amphitheater" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_conference_hall_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbConferenceHallSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_conference_hall"
+                        android:textOn="@string/str_conference_hall" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_firefight_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbFirefightSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_firefight"
+                        android:textOn="@string/str_firefight" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_solar_battery_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbSolarBatterySpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_solar_battery"
+                        android:textOn="@string/str_solar_battery" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_fountain_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbFountainSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_fountain"
+                        android:textOn="@string/str_fountain" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_cargo_elevator_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbCargoElevatorSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_cargo_elevator"
+                        android:textOn="@string/str_cargo_elevator" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_water_supply_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbWaterSupplySpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_water_supply"
+                        android:textOn="@string/str_water_supply" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_tennis_court_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbTennisCourtFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_tennis_court"
+                        android:textOn="@string/str_tennis_court" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_guest_parking_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbGuestParkingSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_guest_parking"
+                        android:textOn="@string/str_guest_parking" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_special_features_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_sauna_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbSaunaSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_sauna"
+                        android:textOn="@string/str_sauna" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_jacuzzi_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbJacuzziSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_jacuzzi"
+                        android:textOn="@string/str_jacuzzi" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_children_pool_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbChildrenPoolSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_children_pool"
+                        android:textOn="@string/str_children_pool" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_roof_garden_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbRoofGardenSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_roof_garden"
+                        android:textOn="@string/str_roof_garden" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_barbecue_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbBarbecueSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_barbecue"
+                        android:textOn="@string/str_barbecue" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_shooting_waste_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbShootingWasteSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_shooting_waste"
+                        android:textOn="@string/str_shooting_waste" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_altar_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbAltarSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_altar"
+                        android:textOn="@string/str_altar" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_security_system_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbSecuritySystemSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_security_system"
+                        android:textOn="@string/str_security_system" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_smart_home_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbSmartHomeSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_smart_home"
+                        android:textOn="@string/str_smart_home" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_safeguard_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbSafeguardSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_safeguard"
+                        android:textOn="@string/str_safeguard" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_emergency_power_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbEmergencyPowerSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_emergency_power"
+                        android:textOn="@string/str_emergency_power" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_caretakers_room_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbCaretakersRoomSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_caretakers_room"
+                        android:textOn="@string/str_caretakers_room" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_security_door_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbSecurityDoorSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_security_door"
+                        android:textOn="@string/str_security_door" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_water_purifier_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbWaterPurifierSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_water_purifier"
+                        android:textOn="@string/str_water_purifier" />
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_pool_table_special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbPoolTableSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_pool_table"
+                        android:textOn="@string/str_pool_table" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_garden_yard__special_features"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:checked="@={specialFeatures.tgbGardenYardSpecialFeaturesValue}"
+                        android:orientation="vertical"
+                        android:textOff="@string/str_garden_yard"
+                        android:textOn="@string/str_garden_yard" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_special_features"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="تایید" />
+
+    </LinearLayout>
+</layout>

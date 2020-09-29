@@ -1,0 +1,889 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">بنگاه مدرن من</string>
+    <string name="title_home">خانه</string>
+    <string name="title_map">نقشه</string>
+    <string name="title_notifications">اعلانات</string>
+    <string name="title_search">جستجو</string>
+    <string name="title_category">دسته ها</string>
+
+
+    <string-array name="array_sp_dialog_melk_gallary">
+        <item>saveToGallary</item>
+        <item>deleteImage</item>
+    </string-array>
+
+    <string-array name="array_name_eshteraks">
+        <item>دارد</item>
+        <item>ندارد</item>
+        <item>مشترک</item>
+    </string-array>
+
+    <string-array name="array_trans_type">
+        <item>فروش</item>
+        <item>رهن و اجاره</item>
+        <item>مشارکت در ساخت</item>
+        <item>پیش فروش</item>
+    </string-array>
+
+    <string-array name="array_combo_melk_type_sell_and_rent">
+        <item>آپارتمان</item>
+        <item>ویلا</item>
+        <item>باغ ویلا</item>
+        <item>مغازه</item>
+        <item>پنت هاوس</item>
+        <item>زمین</item>
+        <item>کلنگی</item>
+        <item>باغ و باغچه</item>
+        <item>مستقلات</item>
+        <item>کارخانه</item>
+        <item>سوئیت</item>
+        <item>دامداری</item>
+        <item>انبار</item>
+        <item>سوله</item>
+        <item>استودیو</item>
+        <item>سالن، تالار</item>
+    </string-array>
+
+    <string-array name="array_combo_melk_type_per_sell">
+        <item>آپارتمان</item>
+        <item>ویلا</item>
+        <item>باغ ویلا</item>
+        <item>مغازه</item>
+        <item>پنت هاوس</item>
+        <item>کلنگی</item>
+        <item>باغ و باغچه</item>
+        <item>مستقلات</item>
+        <item>کارخانه</item>
+        <item>سوئیت</item>
+        <item>دامداری</item>
+        <item>انبار</item>
+        <item>سوله</item>
+        <item>استودیو</item>
+        <item>سالن، تالار</item>
+    </string-array>
+
+    <string-array name="array_combo_melk_type_partnership">
+        <item>زمین</item>
+        <item>کلنگی</item>
+        <item>باغ و باغچه</item>
+    </string-array>
+
+
+    <string-array name="array_combo_user_type">
+        <item>مسکونی</item>
+        <item>اداری</item>
+        <item>موقعیت اداری</item>
+        <item>تجاری</item>
+        <item>اقامتی و تفریحی</item>
+        <item>صنعتی و تولیدی</item>
+        <item>کشاورزی</item>
+        <item>انبار کالا</item>
+        <item>ورزشی</item>
+        <item>دامپروری</item>
+        <item>مطب</item>
+        <item>آموزشی</item>
+    </string-array>
+
+    <string name="melk_user_type_str">نوع کاربری ملک را انتخاب کنید</string>
+    <string name="special_feature_str">امکانات ویژه</string>
+    <string name="type_of_melk_document_str">نوع سند ملک</string>
+    <string name="floo_covering_type_str">نوع کفپوش</string>
+    <string name="ch_sytem_str">سیستم سرماش و گرمایش</string>
+    <string name="building_facades_str">نمای ساختمان</string>
+    <string name="kitchen_cabinets_str">کابینت آشپزخانه</string>
+    <string name="windows_type_str">نوع پنجره ها</string>
+    <string name="building_type_str">نوع ساختمان</string>
+    <string name="view_str">چشم انداز</string>
+    <string name="room_type_str">انواع اتاق</string>
+    <string name="furnished_facilities_str">امکانات مبله</string>
+
+    <string name="username">محمد رضا عبیری</string>
+    <string name="email">mreza.abiri@gmail.com</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="search_location">Search Location</string>
+    <string name="yourLocation">مکان فعلی شما</string>
+    <string name="strDialogBoxMarker">آیا به ثبت این نقطه تمایل دارید؟</string>
+    <string name="strMassegeReplaceHome">آیا از جابجایی مکان این ملک مطمئن هستید؟</string>
+    <string name="strDialogDraggMarker">تایید جابجایی نشانگر!</string>
+    <string name="strDialogBoxRemoveMarker">آیا از حذف ملک مورد نظر اطمینان دارید؟</string>
+    <string name="titleDialogMarker">ثبت نقطه</string>
+    <string name="titleDialogRemoveMarker">حذف ملک</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="edtMapSearchHint">لطفا مکان مورد نظر را جستجو نمایید</string>
+    <string name="memory_full_message">فضای حافظه داخلی دستگاه شما کافی نمی باشد!</string>
+    <string name="internal_memory_full_message">فضای حافظه خارجی دستگاه شما کافی نمی باشد!</string>
+    <string name="dragMarkerEnabled">اکنون شما میتوانید نشانگر مورد نظر را جابجا نمایید!</string>
+    <string name="no_internet_access">دستگاه شما به اینترنت متصل نمی باشد!</string>
+    <string name="no_gps_enabled">مکان نمای دستگاه شما خاموش می باشد!</string>
+    <string name="my_bongah">بنگاه من</string>
+    <string name="enter_melk_info">ثبت اطلاعات ملک</string>
+    <string name="googlePlayService_notInstalled">\"سرویس دهنده گوگل برروی گوشی شما نصب نیست یا نیاز به بروز رسانی دارد\"</string>
+    <string name="permission_rationale_location">permission_rationale_location</string>
+    <string name="permission_required_toast">permission_required</string>
+    <string name="location_permission_denied">location_permission_denied</string>
+    <string name="yourLastLocation">آخرین موقعیت شما در این محدوده قرار داشته است!</string>
+    <string name="no_place_available">موردی یافت نشد!</string>
+    <string name="firstFixMarkerDraging">ابتدا جابجایی را مشخص کنید!</string>
+    <string name="no_route_find">No route found!</string>
+    <string name="place_details">place_details</string>
+    <string name="homeSaveAlarm">آیا مایلید تغییرات اعمال شده را ذخیره کنید؟</string>
+    <string name="fieldsAreEmpty">لطفا موارد ستاره دار را پر کنید!</string>
+
+
+    <string-array name="arr_number_of_owners">
+        <item> 0</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+    </string-array>
+    <string-array name="arr_percentage_of_progress_made">
+        <item> -</item>
+        <item> 5</item>
+        <item> 10</item>
+        <item> 15</item>
+        <item> 20</item>
+        <item> 25</item>
+        <item> 30</item>
+        <item> 35</item>
+        <item> 40</item>
+        <item> 45</item>
+        <item> 50</item>
+        <item> 55</item>
+        <item> 60</item>
+        <item> 65</item>
+        <item> 70</item>
+        <item> 75</item>
+        <item> 80</item>
+        <item> 85</item>
+        <item> 90</item>
+        <item> 95</item>
+        <item> 100</item>
+    </string-array>
+    <string-array name="arr_number_of_human_for_live">
+        <item> -</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> +10</item>
+    </string-array>
+
+    <string-array name="arr_number_of_dung_for_sell">
+        <item> 6</item>
+        <item> 5.5</item>
+        <item> 5</item>
+        <item> 4.5</item>
+        <item> 4</item>
+        <item> 3.5</item>
+        <item> 3</item>
+        <item> 2.5</item>
+        <item> 2</item>
+        <item> 1.5</item>
+        <item> 1</item>
+        <item> 0.5</item>
+    </string-array>
+
+    <string-array name="arr_melk_age">
+        <item> -</item>
+        <item> 0</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> 10</item>
+        <item> 11</item>
+        <item> 12</item>
+        <item> 13</item>
+        <item> 14</item>
+        <item> 15</item>
+        <item> 16</item>
+        <item> 17</item>
+        <item> 18</item>
+        <item> 19</item>
+        <item> 20</item>
+        <item> 21</item>
+        <item> 22</item>
+        <item> 23</item>
+        <item> 24</item>
+        <item> 25</item>
+        <item> 26</item>
+        <item> 27</item>
+        <item> 28</item>
+        <item> 29</item>
+        <item> 30</item>
+        <item> 31</item>
+        <item> 32</item>
+        <item> 33</item>
+        <item> 34</item>
+        <item> 35</item>
+        <item> 36</item>
+        <item> 37</item>
+        <item> 38</item>
+        <item> 39</item>
+        <item> +40</item>
+    </string-array>
+
+    <string-array name="arr_number_of_bedroom">
+        <item> -</item>
+        <item> 0</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> 10</item>
+        <item> 11</item>
+        <item> 12</item>
+        <item> 13</item>
+        <item> 14</item>
+        <item> +15</item>
+    </string-array>
+
+    <string-array name="arr_floor_number">
+        <item> -5</item>
+        <item> -4</item>
+        <item> -3</item>
+        <item> -2</item>
+        <item> -1</item>
+        <item> -</item>
+        <item> 0</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> 10</item>
+        <item> 11</item>
+        <item> 12</item>
+        <item> 13</item>
+        <item> 14</item>
+        <item> 15</item>
+        <item> 16</item>
+        <item> 17</item>
+        <item> 18</item>
+        <item> 19</item>
+        <item> 20</item>
+        <item> 21</item>
+        <item> 22</item>
+        <item> 23</item>
+        <item> 24</item>
+        <item> 25</item>
+        <item> 26</item>
+        <item> 27</item>
+        <item> 28</item>
+        <item> 29</item>
+        <item> 30</item>
+        <item> 31</item>
+        <item> 32</item>
+        <item> 33</item>
+        <item> 34</item>
+        <item> 35</item>
+        <item> 36</item>
+        <item> 37</item>
+        <item> 38</item>
+        <item> 39</item>
+        <item> 40</item>
+        <item> 41</item>
+        <item> 42</item>
+        <item> 43</item>
+        <item> 44</item>
+        <item> 45</item>
+        <item> 46</item>
+        <item> 47</item>
+        <item> 48</item>
+        <item> 49</item>
+        <item> +50</item>
+    </string-array>
+    <string-array name="arr_number_of_floors">
+        <item> -</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> 10</item>
+        <item> 11</item>
+        <item> 12</item>
+        <item> 13</item>
+        <item> 14</item>
+        <item> 15</item>
+        <item> 16</item>
+        <item> 17</item>
+        <item> 18</item>
+        <item> 19</item>
+        <item> 20</item>
+        <item> 21</item>
+        <item> 22</item>
+        <item> 23</item>
+        <item> 24</item>
+        <item> 25</item>
+        <item> 26</item>
+        <item> 27</item>
+        <item> 28</item>
+        <item> 29</item>
+        <item> 30</item>
+        <item> 31</item>
+        <item> 32</item>
+        <item> 33</item>
+        <item> 34</item>
+        <item> 35</item>
+        <item> 36</item>
+        <item> 37</item>
+        <item> 38</item>
+        <item> 39</item>
+        <item> 40</item>
+        <item> 41</item>
+        <item> 42</item>
+        <item> 43</item>
+        <item> 44</item>
+        <item> 45</item>
+        <item> 46</item>
+        <item> 47</item>
+        <item> 48</item>
+        <item> 49</item>
+        <item> +50</item>
+    </string-array>
+
+    <string-array name="arr_number_of_unit_in_floor">
+        <item> -</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> +5</item>
+    </string-array>
+    <string-array name="arr_number_of_elevator">
+        <item> -</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> +10</item>
+    </string-array>
+    <string-array name="arr_number_of_kitchen">
+        <item> -</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> +5</item>
+    </string-array>
+
+
+    <string-array name="arr_melk_width">
+        <item> -</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> 10</item>
+        <item> 11</item>
+        <item> 12</item>
+        <item> 13</item>
+        <item> 14</item>
+        <item> 15</item>
+        <item> 16</item>
+        <item> 17</item>
+        <item> 18</item>
+        <item> 19</item>
+        <item> 20</item>
+        <item> 21</item>
+        <item> 22</item>
+        <item> 23</item>
+        <item> 24</item>
+        <item> 25</item>
+        <item> 26</item>
+        <item> 27</item>
+        <item> 28</item>
+        <item> 29</item>
+        <item> 30</item>
+        <item> 31</item>
+        <item> 32</item>
+        <item> 33</item>
+        <item> 34</item>
+        <item> 35</item>
+        <item> 36</item>
+        <item> 37</item>
+        <item> 38</item>
+        <item> 39</item>
+        <item> 40</item>
+        <item> 41</item>
+        <item> 42</item>
+        <item> 43</item>
+        <item> 44</item>
+        <item> 45</item>
+        <item> 46</item>
+        <item> 47</item>
+        <item> 48</item>
+        <item> 49</item>
+        <item> 50</item>
+        <item> 51</item>
+        <item> 52</item>
+        <item> 53</item>
+        <item> 54</item>
+        <item> 55</item>
+        <item> 56</item>
+        <item> 57</item>
+        <item> 58</item>
+        <item> 59</item>
+        <item> 60</item>
+        <item> 61</item>
+        <item> 62</item>
+        <item> 63</item>
+        <item> 64</item>
+        <item> 65</item>
+        <item> 66</item>
+        <item> 67</item>
+        <item> 68</item>
+        <item> 69</item>
+        <item> 70</item>
+        <item> 71</item>
+        <item> 72</item>
+        <item> 73</item>
+        <item> 74</item>
+        <item> 75</item>
+        <item> 76</item>
+        <item> 77</item>
+        <item> 78</item>
+        <item> 79</item>
+        <item> 80</item>
+        <item> 81</item>
+        <item> 82</item>
+        <item> 83</item>
+        <item> 84</item>
+        <item> 85</item>
+        <item> 86</item>
+        <item> 87</item>
+        <item> 88</item>
+        <item> 89</item>
+        <item> 90</item>
+        <item> 91</item>
+        <item> 92</item>
+        <item> 93</item>
+        <item> 94</item>
+        <item> 95</item>
+        <item> 96</item>
+        <item> 97</item>
+        <item> 98</item>
+        <item> 99</item>
+        <item> +100</item>
+    </string-array>
+
+    <string-array name="arr_number_of_tel_line">
+        <item> 0</item>
+        <item> 1</item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+        <item> 8</item>
+        <item> 9</item>
+        <item> +10</item>
+    </string-array>
+    <string-array name="arr_height_of_the_ceiling">
+        <item> -</item>
+        <item> 2</item>
+        <item> 2.5</item>
+        <item> 3</item>
+        <item> 3.5</item>
+        <item> 4</item>
+        <item> 4.5</item>
+        <item> 5</item>
+        <item> 5.5</item>
+        <item> 6</item>
+        <item> 6.5</item>
+        <item> 7</item>
+        <item> 7.5</item>
+        <item> 8</item>
+        <item> 8.5</item>
+        <item> 9</item>
+        <item> 9.5</item>
+        <item> +10</item>
+    </string-array>
+
+    <string-array name="arr_distance_with_public_vehicle">
+        <item> -</item>
+        <item> 10</item>
+        <item> 20</item>
+        <item> 30</item>
+        <item> 40</item>
+        <item> 50</item>
+        <item> 60</item>
+        <item> 70</item>
+        <item> 80</item>
+        <item> 90</item>
+        <item> 100</item>
+        <item> 200</item>
+        <item> 300</item>
+        <item> 400</item>
+        <item> 500</item>
+        <item> 600</item>
+        <item> 700</item>
+        <item> 800</item>
+        <item> 900</item>
+        <item> +1000</item>
+    </string-array>
+
+    <string name="number_picker_formatter">%d</string>
+    <string name="save_to_gallary">saveToGallary</string>
+    <string name="delete_image">deleteImage</string>
+    <string name="label_select_picture">Select Picture</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+    <string name="str_transaction_type">نوع معامله</string>
+    <string name="str_melk_type">نوع ملک</string>
+    <string name="str_melk_usage_type">نوع کاربری</string>
+    <string name="str_melk_area">متراژ (متر مربع)</string>
+    <string name="str_enter_melk_area">متراژ ملک را وارد کنید</string>
+    <string name="str_value_per_metr">قیمت هر متر مربع (تومان)</string>
+    <string name="str_enter_value_per_metr">قیمت هر متر مربع را وارد کنید</string>
+    <string name="str_installment_sell">فروش اقساطی</string>
+    <string name="str_total_sales_price">قیمت فروش کل (تومان)</string>
+    <string name="str_enter_total_sales_price">قیمت کل فروش ملک را وارد کنید</string>
+    <string name="str_amount_rahn">مبلغ رهن (تومان)</string>
+    <string name="str_enter_amount_rahn">مبلغ رهن را وارد کنید</string>
+    <string name="str_amount_rent">مبلغ اجاره ماهانه (تومان)</string>
+    <string name="str_enter_amount_rent">مبلغ اجاره را وارد کنید</string>
+    <string name="str_convertible">قابل تبدیل</string>
+    <string name="str_convertable_to_rent">قابل تبدیل به اجاره</string>
+    <string name="str_convertable_to_rahn">قابل تبدیل به رهن</string>
+    <string name="str_installment_terms">شرایط پرداخت اقساط (اختیاری)</string>
+    <string name="str_enter_installment_terms">شرایط اقساط را وارد کنید</string>
+    <string name="str_owner_info">مشخصات مالک یا مالکین</string>
+    <string name="str_enter_owner_info">مشخصات مالک یا مالکین را وارد کنید</string>
+    <string name="str_number_of_owners">تعداد مالکین</string>
+    <string name="str_nuber_of_dung_for_sell">تعداد دانگ قابل فروش</string>
+    <string name="str_since_quantity">مقدار قدرالسهم (متر)</string>
+    <string name="str_enter_since_quantity">مقدار قدرالسهم را وارد کنید</string>
+    <string name="str_max_allowed_for_residences">حداکثر تعداد مجاز برای سکونت (نفر)</string>
+    <string name="str_percentage_of_progress_made">درصد پیشرفت ساخت و ساز پروژه (%)</string>
+    <string name="str_melk_receive_time">زمان تحویل ملک</string>
+    <string name="str_select_melk_receive_time">زمان تحویل ملک را انتخاب کنید</string>
+    <string name="str_melk_age">سن بنا</string>
+    <string name="str_number_of_rooms">تعداد اتاق خواب</string>
+    <string name="str_floor">طبقه</string>
+    <string name="str_number_of_floors">تعداد کل طبقات</string>
+    <string name="str_number_of_floor_in_unit">تعداد واحد در هر طبقه</string>
+    <string name="str_unit_type">نوع واحد</string>
+    <string name="str_flat">فلت</string>
+    <string name="str_dooblex">دوبلکس</string>
+    <string name="str_triplex">تریپلکس</string>
+    <string name="str_melk_positions">موقعیت ملک</string>
+    <string name="str_lightning_direction">جهت نورگیر</string>
+    <string name="str_beach">ساحل</string>
+    <string name="jangle">جنگل</string>
+    <string name="str_mountain">کوهستانی</string>
+    <string name="str_township">شهرکی</string>
+    <string name="str_discharge">تخلیه</string>
+    <string name="str_melk_discharge">وضعیت ملک</string>
+    <string name="str_enter_date_of_discharge">ثبت تاریخ تخلیه</string>
+    <string name="str_some_possibilities">برخی از امکانات و مشخصات :</string>
+    <string name="str_patio">پاسیو</string>
+    <string name="str_water_well">چاه آب</string>
+    <string name="str_balcony">بالکن</string>
+    <string name="str_video_iphon">آیفن تصویری</string>
+    <string name="str_wall_closet">کمد دیواری</string>
+    <string name="str_storey">انباری</string>
+    <string name="str_yard">حیاط</string>
+    <string name="str_janitor">سرایدار</string>
+    <string name="str_rebuild">بازسازی شده</string>
+    <string name="str_sofa">مبله</string>
+    <string name="str_camera">دوربین</string>
+    <string name="str_central_antenna">آنتن مرکزی</string>
+    <string name="str_changeable">قابل معاوضه</string>
+    <string name="str_loan">دارای وام</string>
+    <string name="str_available_loan">مبلغ وام (تومان)</string>
+    <string name="str_enter_loan_value">مبلغ وام را وارد نمایید</string>
+    <string name="str_number_of_elevator">تعداد آسانسور</string>
+    <string name="str_number_of_bathroom">تعداد حمام</string>
+    <string name="str_number_of_parking">تعداد پارکینگ</string>
+    <string name="str_number_of_kitchen">تعداد آشپزخانه</string>
+    <string name="str_number_of_masterRoom">تعداد مستر روم</string>
+    <string name="str_number_of_iran_toilet">تعداد سرویس ایرانی</string>
+    <string name="str_number_of_foreign_toilet">تعداد سرویس فرنگی</string>
+    <string name="str_select_sp_possibilities">انتخاب امکانات ویژه</string>
+    <string name="str_month_charge_value">مبلغ شارژ ماهیانه</string>
+    <string name="str_enter_month_charge_value">مبلغ شارژ ماهیانه را وارد کنید</string>
+    <string name="str_geo_position">موقعیت جغرافیایی ملک</string>
+    <string name="str_west">غرب</string>
+    <string name="str_est">شرق</string>
+    <string name="str_south">جنوب</string>
+    <string name="str_north">شمال</string>
+    <string name="str_structure_type">نوع سازه</string>
+    <string name="str_blots_nuts">پیچ و مهره</string>
+    <string name="str_metal">فلزی</string>
+    <string name="str_aluminium_thermal_break">آلومینیومی ترمال بریک</string>
+    <string name="str_add_new_unit">افزودن واحد جدید</string>
+    <string name="str_concrete_and_bar">بتن و میله گرد</string>
+    <string name="str_lighting_direct">جهت نورگیر</string>
+    <string name="str_number_of_roof_space">تعداد فضای مسقف سوله</string>
+    <string name="str_melk_with">عرض ملک</string>
+    <string name="str_goodwill">سرقفلی</string>
+    <string name="str_property">ملکیت</string>
+    <string name="str_electric_meter_type">نوع کنتور برق</string>
+    <string name="str_three_phase">سه فاز</string>
+    <string name="str_one_phase">تک فاز</string>
+    <string name="str_share">اشتراکی</string>
+    <string name="str_private">اختصاصی</string>
+    <string name="str_gas_meter_type">نوع کنتور گاز</string>
+    <string name="str_water_meter_type">نوع کنتور آب</string>
+    <string name="str_number_of_tel_sub">تعداد خط تلفن</string>
+    <string name="str_melk_doc_type">نوع سند ملک</string>
+    <string name="str_cooling_healing_system">سیستم سرمایش و گرمایش</string>
+    <string name="str_floor_cover_type">نوع کف پوش</string>
+    <string name="str_building_facade">نمای ساختمان</string>
+    <string name="str_kitchen_cabinet">کابینت آشپزخانه</string>
+    <string name="str_windows_type">نوع پنجره ها</string>
+    <string name="str_type_of_building">نوع ساختمان</string>
+    <string name="str_landscape">چشم انداز</string>
+    <string name="str_type_of_rooms">انواع اتاق ها</string>
+    <string name="str_furnished_facilities">امکانات مبله</string>
+    <string name="str_more_info">توضیحات</string>
+    <string name="str_melk_info">توضیحات ملک</string>
+    <string name="str_distance_to_public_vehicle">فاصله تا وسایل نقلیه عمومی (متر)</string>
+    <string name="str_gallery">گالری</string>
+    <string name="str_ceiling_height">ارتفاع حدودی سقف (متر)</string>
+    <string name="todo">TODO</string>
+    <string name="str_rahn_and_rent">رهن و اجاره</string>
+    <string name="str_sell">فروش</string>
+    <string name="str_per_sell">پیش فروش</string>
+    <string name="str_contribution_to_the_construction">مشارکت در ساخت</string>
+    <string name="str_lobby">لابی</string>
+    <string name="str_bath_room_van">وان حمام</string>
+    <string name="str_swimming_pool">استخر</string>
+    <string name="str_fire_place">شومینه</string>
+    <string name="str_children_play_space">فضای بازی کودکان</string>
+    <string name="str_garden_yard">یارد گاردن</string>
+    <string name="str_central_vacuum">جارو برقی مرکزی</string>
+    <string name="str_amphitheater">آمفی تاتر</string>
+    <string name="str_conference_hall">سالن اجتماعات</string>
+    <string name="str_firefight">اطفا حریق</string>
+    <string name="str_solar_battery">باطری خورشیدی</string>
+    <string name="str_fountain">آبنما</string>
+    <string name="str_cargo_elevator">آسانسسور حمل بار</string>
+    <string name="str_water_supply">منبع ذخیره آب</string>
+    <string name="str_tennis_court">زمین تنیس</string>
+    <string name="str_guest_parking">پارکینگ مهمان</string>
+    <string name="str_sauna">سونا</string>
+    <string name="str_jacuzzi">جکوزی</string>
+    <string name="str_children_pool">استخر کودکان</string>
+    <string name="str_roof_garden">روف گاردن</string>
+    <string name="str_barbecue">باربیکیو</string>
+    <string name="str_shooting_waste">شوتینگ زباله</string>
+    <string name="str_altar">آلاچیق</string>
+    <string name="str_security_system">سیستم امنیتی</string>
+    <string name="str_smart_home">اسمارت هوم</string>
+    <string name="str_safeguard">گاو صندوق</string>
+    <string name="str_emergency_power">برق اظطراری</string>
+    <string name="str_caretakers_room">اتاق سرایداری</string>
+    <string name="str_security_door">درب ضد سرقت</string>
+    <string name="str_water_purifier">تسویه کننده آب</string>
+    <string name="str_parking_remote">ریموت پارکینگ</string>
+    <string name="str_pool_table">میز بیلیارد</string>
+    <string name="str_official">اداری</string>
+    <string name="str_commercial">تجاری</string>
+    <string name="str_idustrial">صنعتی ، تولیدی</string>
+    <string name="str_clinic">مطب</string>
+    <string name="str_sports">ورزشی</string>
+    <string name="str_agriculture">کشاورزی</string>
+    <string name="str_administrative_position">موقعیت اداری</string>
+    <string name="str_resident">اقامتی ، تفریحی</string>
+    <string name="str_animal_husbandry">دامپروری</string>
+    <string name="str_educational">آموزشی</string>
+    <string name="str_store">انبار کالا</string>
+    <string name="str_confirm">تایید</string>
+    <string name="str_personal">شخصی</string>
+    <string name="str_endowments">اوقافی</string>
+    <string name="str_shari_ruler">حاکم شرعی</string>
+    <string name="sr_organizational">سازمانی</string>
+    <string name="str_cooperative">تعاونی</string>
+    <string name="str_proxy">وکالتی</string>
+    <string name="str_letter">مبایعه نامه</string>
+    <string name="str_jointly">مشاع</string>
+    <string name="str_residential">مسکونی</string>
+    <string name="str_industrial">صنعتی</string>
+    <string name="str_stone">سنگ</string>
+    <string name="str_carpet">موکت</string>
+    <string name="str_parket">پارکت</string>
+    <string name="str__mosaic">موزاییک</string>
+    <string name="str_asphalt">آسفالت</string>
+    <string name="str_ceramic">سرامیک</string>
+    <string name="str_laminate">لمینت</string>
+    <string name="str_wood">چوب</string>
+    <string name="str_granite">گرانیت</string>
+    <string name="str_cement">سیمان</string>
+    <string name="str_package">پیکج</string>
+    <string name="str_heater">بخاری</string>
+    <string name="str_chiller">چیلر</string>
+    <string name="str_water_cooler">کولرآبی</string>
+    <string name="str_fan_coil">فن کویلگ</string>
+    <string name="str_central_engine">موتورخانه مرکزی</string>
+    <string name="str_floor_heating">گرمایش از کف</string>
+    <string name="str_air_conditioner">هواساز</string>
+    <string name="str_gas_cooler">کولر گازی</string>
+    <string name="str_konteks">کنیتکس</string>
+    <string name="str_aluminum">آلمینیوم</string>
+    <string name="str_brick">آجرنما</string>
+    <string name="str_glass">شیشه</string>
+    <string name="str_composite">کامپوزیت</string>
+    <string name="str_hi_glass">های گلاس</string>
+    <string name="str_hdf_kitchen">اچ دی اف</string>
+    <string name="str__mdf">ام دی اف</string>
+    <string name="str__pvc">پی وی سی</string>
+    <string name="str_gentle">قدی</string>
+    <string name="str_pvc_two_shells">پی وی سی (دوجداره)</string>
+    <string name="str_woody">چوبی</string>
+    <string name="str_metal_two_shells">فلزی (دوجداره)</string>
+    <string name="str_fiber_glass">فایبر گلاس</string>
+    <string name="str_tower">برج</string>
+    <string name="str_apartment">آپارتمانی</string>
+    <string name="str_apart">آپارتمان</string>
+    <string name="str_villayi">ویلایی</string>
+    <string name="str_villa">ویلا</string>
+    <string name="str_garden_villa">باغ ویلا</string>
+    <string name="str_shop">مغازه</string>
+    <string name="str_pent_house">پنت هاوس</string>
+    <string name="str_earth">زمین</string>
+    <string name="str_clutter">کلنگی</string>
+    <string name="str_garden">باغ و باغچه</string>
+    <string name="str_mostaghelat">مستقلات</string>
+    <string name="str_factory">کارخانه</string>
+    <string name="str_suit">سوئیت</string>
+    <string name="str_husbandry">دامداری</string>
+    <string name="str_repository">انبار</string>
+    <string name="str_soole">سوله</string>
+    <string name="str_studio">استودیو</string>
+    <string name="str_saloon_talar">سالن، تالار</string>
+    <string name="str_integrated">مجتمع</string>
+    <string name="str_passage">پاساژ</string>
+    <string name="str_lake">دریاچه</string>
+    <string name="str_jangle">جنگلی</string>
+    <string name="str_city">شهر</string>
+    <string name="str_panorama">پانوراما</string>
+    <string name="str_park">پارک</string>
+    <string name="str_mountain_ly">کوهستان</string>
+    <string name="str_sea">دریا</string>
+    <string name="str_river">رودخانه</string>
+    <string name="str_sky">آسمان</string>
+    <string name="str_refrigerator">یخچال</string>
+    <string name="str_microwave">ماکروویو</string>
+    <string name="str_farsh">فرش</string>
+    <string name="str_chandelier">لوستر</string>
+    <string name="str_vacuum_cleaner">جارو برقی</string>
+    <string name="str_dishwasher">ماشین ظرفشویی</string>
+    <string name="str_bed_room_flat">تخت</string>
+    <string name="str_oven">اجاق گاز</string>
+    <string name="str_furniture">مبلمان</string>
+    <string name="str_television">تلوزیون</string>
+    <string name="str_curtain">پرده</string>
+    <string name="str_otto">اتو</string>
+    <string name="str_washing_machine">ماشین لباس شویی</string>
+    <string name="str_dishes">ظروف</string>
+    <string name="str_library">کتابخانه</string>
+    <string name="str_dressing_room">اتاق پرو</string>
+    <string name="str_dining_room">نهار خوری</string>
+    <string name="str_work_shop">کارگاه</string>
+    <string name="str_work_room">اتاق کار</string>
+    <string name="str_lollipop">رختشور خانه</string>
+
+    <!---->
+    ---------------------------------------------------------------------------------------------
+    <string name="mdtp_done_label" msgid="7007948707597430919">"انجام شد"</string>
+    <string name="mdtp_ok">تایید</string>
+    <string name="mdtp_cancel">انصراف</string>
+    <!--
+         Content description for the hour selector in the time picker, which displays
+         selectable hours of the day along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_hour_picker_description" msgid="7586639618712934060">"لغزنده دایره‌ای ساعت"</string>
+    <!--
+         Content description for the minute selector in the time picker, which displays
+         selectable five-minute intervals along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_minute_picker_description" msgid="6024811202872705251">"لغزنده دایره‌ای دقیقه"</string>
+    <!-- Accessibility announcement for hour circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_hours" msgid="7651068754188418859">"انتخاب ساعت"</string>
+    <!-- Accessibility announcement for minute circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_minutes" msgid="8327182090226828481">"انتخاب دقیقه"</string>
+
+    <!--
+        Content description for the month and day selector in the date picker, which displays
+        a selectable grid of days laid out by month.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_day_picker_description">Month grid of days</string>
+    <!--
+        Content description for the year selector in the date picker, which displays
+        a scrolling, vertical list of years.
+        [CHAR LIMIT=50]
+     -->
+    <string name="mdtp_year_picker_description">Year list</string>
+    <!-- Accessibility announcement for the day picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_day">Select month and day</string>
+    <!-- Accessibility announcement for the year picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_year">Select year</string>
+    <!-- Accessibility description for the item that is currently selected. -->
+    <string name="mdtp_item_is_selected" msgid="2674929164900463786">"<xliff:g id="ITEM">%1$s</xliff:g> انتخاب شد"</string>
+    <!-- Accessibility announcement when a number that had been typed in is deleted [CHAR_LIMIT=NONE] -->
+    <string name="mdtp_deleted_key" msgid="6908431551612331381">"<xliff:g id="KEY">%1$s</xliff:g> حذف شد"</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_placeholder" translatable="false">--</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_separator" translatable="false">:</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_radial_numbers_typeface" translatable="false">sans-serif</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_sans_serif" translatable="false">sans-serif</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_day_of_week_label_typeface" translatable="false">sans-serif</string>
+    <string name="am_label">قبل‌ازظهر</string>
+    <string name="pm_label">بعدازظهر</string>
+    <string name="str_unit">واحد</string>
+</resources>

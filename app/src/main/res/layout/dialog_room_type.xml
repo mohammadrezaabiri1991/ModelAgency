@@ -1,0 +1,145 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="roomType"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_room_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/room_type_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="@dimen/margin16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_room_type_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_library_room_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:checked="@={roomType.tgbLibraryRoomTypeValue}"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_library"
+                        android:textOn="@string/str_library" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_dressing_room_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:checked="@={roomType.tgbDressingRoomTypeValue}"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_dressing_room"
+                        android:textOn="@string/str_dressing_room" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_dining_room_type"
+                        android:layout_width="144dp"
+                        android:checked="@={roomType.tgbDiningRoomTypeValue}"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_dining_room"
+                        android:textOn="@string/str_dining_room" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_room_type_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_workshop_room_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:checked="@={roomType.tgbWorkShopRoomTypeValue}"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_work_shop"
+                        android:textOn="@string/str_work_shop" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_work_room_type"
+                        android:layout_width="144dp"
+                        android:checked="@={roomType.tgbWorkRoomTypeValue}"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_work_room"
+                        android:textOn="@string/str_work_room" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_home_lollipop_room_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:checked="@={roomType.tgbHomeLollipopRoomTypeValue}"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_lollipop"
+                        android:textOn="@string/str_lollipop" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_room_type"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:example="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="40dp" android:clickable="true" android:orientation="vertical"
+    android:paddingLeft="40dp" tools:context="com.hekatomsoft.androidcor.MainActivity">
+
+
+    <LinearLayout android:id="@+id/header_linear" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp" android:orientation="vertical" tools:ignore="ExtraText">
+
+
+        <TextView android:id="@+id/textView7" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:text="ملک" />
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center_vertical" android:orientation="vertical">
+
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Spinner android:id="@+id/melkTypeSpinner" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:entries="@array/array_combo_melk_type" />
+
+                <TextView android:id="@+id/textView4sd" android:layout_width="70dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="نوع ملک:" />
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Spinner android:id="@+id/transTypeSpinner" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:entries="@array/array_combo_moamele_type" />
+
+                <TextView android:id="@+id/textView4fs" android:layout_width="70dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="نوع معامله:" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/textVi" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:text="ریال" />
+
+                <EditText android:id="@+id/edtAmountRent" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp"
+                    android:text="20000000" android:textColor="#555555" />
+
+                <TextView android:id="@+id/textVi3" android:layout_width="70dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="میزان اجاره:" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/teView562" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:text="ریال" />
+
+                <EditText android:id="@+id/edtAmountPrepeyment" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp"
+                    android:text="400000000" android:textColor="#555555" />
+
+                <TextView android:id="@+id/textew63" android:layout_width="115dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="میزان پیش پرداخت:" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:gravity="center_vertical" android:orientation="horizontal">
+
+                <EditText android:id="@+id/edtOwnerNamse" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp"
+                    android:text="محمدرضا عبیری" android:textColor="#555555" />
+
+                <TextView android:id="@+id/textView5s6" android:layout_width="115dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="نام و نشان مالک:" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Spinner android:id="@+id/spinners" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary" />
+
+                <TextView android:id="@+id/textView4s" android:layout_width="115dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text=" شماره تماس مالک:" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/textView562" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:text="متر" />
+
+                <EditText android:id="@+id/editText3" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp" android:text="2000"
+                    android:textColor="#555555" />
+
+                <TextView android:id="@+id/textView63" android:layout_width="77dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="مساحت ملک:" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/textView5s" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:text="سال" />
+
+                <EditText android:id="@+id/edt22s" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp" android:text="3"
+                    android:textColor="#555555" />
+
+                <TextView android:id="@+id/textView6sv" android:layout_width="77dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="سن ملک:" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/textView512" android:layout_width="48dp"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:gravity="left" android:text="پارکینگ" />
+
+                <CheckBox android:id="@+id/checkBox" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView android:id="@+id/textView633" android:layout_width="150dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="right" android:text="انباری" />
+
+                <CheckBox android:id="@+id/checkBoex2" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/textView51222" android:layout_width="48dp"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:gravity="left" android:text="تراس" />
+
+                <CheckBox android:id="@+id/checkBoxs" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView android:id="@+id/textView6323" android:layout_width="150dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="right" android:text="حیاط" />
+
+                <CheckBox android:id="@+id/checkBox2" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/textView5dd" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:text="واحد" />
+
+                <EditText android:id="@+id/edt2d2" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp" android:text="7"
+                    android:textColor="#555555" />
+
+                <TextView android:id="@+id/textViewd6" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="تعداد واحد:" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/textView5" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginRight="5dp"
+                    android:text="نبش" />
+
+                <EditText android:id="@+id/edt22" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp" android:text="2"
+                    android:textColor="#555555" />
+
+                <TextView android:id="@+id/textView6" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="تعداد نبش:" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal" android:weightSum="1">
+
+                <Spinner android:id="@+id/spinnersd2" android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary" android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name_eshteraks" android:gravity="right" />
+
+                <TextView android:id="@+id/textViewds7" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" android:gravity="right"
+                    android:text="اشتراک برق:" />
+
+                <Spinner android:id="@+id/spinnersd" android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary" android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name_eshteraks" android:gravity="right" />
+
+                <TextView android:id="@+id/textViewsd4" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="right" android:text="اشتراک آب:" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal" android:weightSum="1">
+
+                <Spinner android:id="@+id/spinnesdr2" android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary" android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name_eshteraks" android:gravity="right" />
+
+                <TextView android:id="@+id/textViesdw7" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" android:gravity="right"
+                    android:text="اشتراک تلفن:" />
+
+                <Spinner android:id="@+id/spinnesdr" android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary" android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name_eshteraks" android:gravity="right" />
+
+                <TextView android:id="@+id/textViewsdfd4" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="اشتراک گاز:" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                android:gravity="center_vertical" android:orientation="horizontal">
+
+                <CalendarView android:id="@+id/calendarView" android:layout_width="wrap_content"
+                    android:layout_height="45dp" android:layout_gravity="center"
+                    android:layout_marginBottom="10dp" android:layout_weight="1" />
+
+                <TextView android:id="@+id/textView56" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="تاریخ تحویل به مشتری:" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:gravity="center_vertical" android:orientation="horizontal">
+
+                <TextView android:id="@+id/textView5sd6" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="متر" />
+
+                <EditText android:id="@+id/editText2" android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:backgroundTint="#ff2222" android:backgroundTintMode="src_atop"
+                    android:elevation="1dp" android:ems="10" android:gravity="left"
+                    android:inputType="textPersonName" android:paddingLeft="5dp" android:text="40"
+                    android:textColor="#555555" />
+
+                <TextView android:id="@+id/textView4" android:layout_width="170dp"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="فاصله تا وسایل نقلیه عمومی:" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginTop="10dp" android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView android:id="@+id/imageView5" android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView android:id="@+id/imageView4" android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView android:id="@+id/imaView" android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView android:id="@+id/textiew63" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+                    android:gravity="left" android:text="گالری:" />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:layout_marginBottom="20dp" android:layout_marginLeft="44dp"
+                android:gravity="center_vertical" android:orientation="horizontal">
+
+                <ImageView android:id="@+id/imageView" android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView android:id="@+id/imageView3" android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView android:id="@+id/imageView2" android:layout_width="72dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

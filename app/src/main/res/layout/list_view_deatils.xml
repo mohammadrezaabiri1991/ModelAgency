@@ -1,0 +1,2455 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="groups"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+
+
+    </data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relative_parent_listView_detail"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_list_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fcfcfc">
+
+            <LinearLayout
+                android:id="@+id/ll_view_list_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin16dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <LinearLayout
+                    android:id="@+id/ll_trans_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_transaction_type" />
+
+
+                    <Spinner
+                        android:id="@+id/sp_trans_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:scrollbarStyle="insideInset"
+                        android:selectedItemPosition="@={groups.spTransTypeValue}" />
+
+                </LinearLayout><!--TODO ll_trans_type-->
+                <LinearLayout
+                    android:id="@+id/ll_melk_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_melk_type" />
+
+                    <Spinner
+                        android:id="@+id/sp_melk_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:scrollbarStyle="insideInset"
+                        android:selection="@={groups.spMelkTypeValue}" />
+                </LinearLayout><!--TODO ll_melk_type-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_usage_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_usage_type"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_melk_usage_type" />
+
+                </RelativeLayout><!--TODO linear_usage_type-->
+
+                <LinearLayout
+                    android:id="@+id/ll_melk_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_melk_area" />
+
+                    <EditText
+                        android:id="@+id/edt_melk_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:hint="@string/str_enter_melk_area"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:padding="10dp"
+                        android:text="@={groups.edtMelkAreaValue}"
+                        android:textAlignment="center" />
+                </LinearLayout><!--TODO ll_melk_area-->
+                <RelativeLayout
+                    android:id="@+id/relative_group_deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linear_amount_sell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:gravity="right"
+                            android:text="@string/str_value_per_metr" />
+
+                        <EditText
+                            android:id="@+id/edt_amount_sell_per_metric"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40_dp"
+                            android:background="@drawable/round_background"
+                            android:hint="@string/str_enter_value_per_metr"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:padding="10dp"
+                            android:text="@={groups.edtAmountSellPerMetricValue}"
+                            android:textAlignment="center" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="20dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                            <Switch
+                                android:id="@+id/sw_installment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="@={groups.swInstallmentValue}" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:text="@string/str_installment_sell" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="@string/str_total_sales_price" />
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/edt_amount_sell"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40_dp"
+                            android:background="@drawable/round_background"
+                            android:hint="@string/str_enter_total_sales_price"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:padding="10dp"
+                            android:text="@={groups.edtAmountSellValue}"
+                            android:textAlignment="center" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_installment_terms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:gravity="right"
+                                android:text="@string/str_installment_terms" />
+
+                            <EditText
+                                android:id="@+id/edt_installment_terms"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:background="@drawable/round_background"
+                                android:gravity="right|top"
+                                android:hint="@string/str_enter_installment_terms"
+                                android:overScrollMode="always"
+                                android:padding="10dp"
+                                android:scrollbarStyle="insideInset"
+                                android:scrollbars="vertical"
+                                android:text="@={groups.edtInstallmentTermsValue}" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_rent_and_rahn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:gravity="right"
+                            android:text="@string/str_amount_rahn" />
+
+                        <EditText
+                            android:id="@+id/edt_amount_rahn"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40_dp"
+                            android:background="@drawable/round_background"
+                            android:hint="@string/str_enter_amount_rahn"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:padding="10dp"
+                            android:text="@={groups.edtAmountRahnValue}"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:gravity="right"
+                            android:text="@string/str_amount_rent" />
+
+                        <EditText
+                            android:id="@+id/edt_amount_rent"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40_dp"
+                            android:background="@drawable/round_background"
+                            android:hint="@string/str_enter_amount_rent"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:padding="10dp"
+                            android:text="@={groups.edtAmountRentValue}"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </RelativeLayout><!--TODO relative_group_deals-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_owners"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_owners" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_owners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfOwnersValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_owners" />
+
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_owners-->
+                <LinearLayout
+                    android:id="@+id/ll_owners_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_owner_info" />
+
+                    <EditText
+                        android:id="@+id/edt_owners_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_120_dp"
+                        android:background="@drawable/round_background"
+                        android:gravity="right|top"
+                        android:hint="@string/str_enter_owner_info"
+                        android:overScrollMode="always"
+                        android:padding="10dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:text="@={groups.edtOwnerInformationsValue}" />
+                </LinearLayout><!--TODO ll_owners_information-->
+                <LinearLayout
+                    android:id="@+id/ll_percentage_of_made_and_receive_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_percentage_of_progress_made" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_percentage_of_progress_made"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpPercentageOfProgressMadeValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_percentage_of_progress_made" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_melk_receive_time" />
+
+                    <TextView
+                        android:id="@+id/txt_select_melk_receive_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:gravity="center"
+                        android:text="@string/str_select_melk_receive_time" />
+                </LinearLayout><!--TODO ll_percentage_of_progress_made-->
+                <LinearLayout
+                    android:id="@+id/ll_melk_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_melk_age" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_melk_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpMelkAgeValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_melk_age" />
+                    </LinearLayout>
+
+                </LinearLayout><!--TODO ll_melk_age-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_bed_rooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_rooms" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_bed_rooms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfBedRoomsValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_bedroom" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_rooms-->
+                <LinearLayout
+                    android:id="@+id/ll_floor_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_floor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_floor_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpFloorNumberValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_floor_number" />
+
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_floor_number-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_floors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_floors" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_floors"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfFloorsValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_floors" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_floors-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_unit_in_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_floor_in_unit" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_unit_in_floor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfUnitInFloorValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_unit_in_floor" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_unit_in_floor-->
+                <LinearLayout
+                    android:id="@+id/ll_unit_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_unit_type" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_flat_unit_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbFlatUnitTypeValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_flat"
+                            android:textOn="@string/str_flat" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_doublex_unit_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbDoublexUnitTypeValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_dooblex"
+                            android:textOn="@string/str_dooblex" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_triplex_unit_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbTriplexUnitTypeValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_triplex"
+                            android:textOn="@string/str_triplex" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_unit_type-->
+                <LinearLayout
+                    android:id="@+id/ll_melk_positions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_melk_positions" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_beach_melk_positions"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbBeachMelkPositionsValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_beach"
+                            android:textOn="@string/str_beach" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_jangle_melk_positions"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbJangleMelkPositionsValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/jangle"
+                            android:textOn="@string/jangle" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_mountain_melk_positions"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbMountainMelkPositionsValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_mountain"
+                            android:textOn="@string/str_mountain" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_township_melk_positions"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbTownshipMelkPositionsValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_township"
+                            android:textOn="@string/str_township" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_melk_positions-->
+                <LinearLayout
+                    android:id="@+id/ll_date_of_quit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/sw_date_of_quit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="@={groups.swDateOfQuitValue}" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_discharge" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/str_melk_discharge" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_date_of_quit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:layout_marginTop="@dimen/margin5dp"
+                        android:background="@drawable/round_background"
+                        android:gravity="center"
+                        android:text="@string/str_enter_date_of_discharge" />
+                </LinearLayout><!--TODO ll_date_of_quit-->
+                <LinearLayout
+                    android:id="@+id/ll_some_possibilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_some_possibilities" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_left_possibilities"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:layout_weight="0.3"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical">
+
+                            <ToggleButton
+                                android:id="@+id/tgb_wall_closet_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbWallClosetPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_wall_closet"
+                                android:textOn="@string/str_wall_closet" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_store_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbStorePossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_storey"
+                                android:textOn="@string/str_storey" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_yard_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbYardPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_yard"
+                                android:textOn="@string/str_yard" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_patio_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbPatioPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_patio"
+                                android:textOn="@string/str_patio" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_water_well_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbWaterWellPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_water_well"
+                                android:textOn="@string/str_water_well" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_center_possibilities"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:layout_weight="0.3"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical">
+
+                            <ToggleButton
+                                android:id="@+id/tgb_janitor_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbJantorPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_janitor"
+                                android:textOn="@string/str_janitor" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_sofa_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbSofaPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_sofa"
+                                android:textOn="@string/str_sofa" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_rebuild_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbRebuildPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_rebuild"
+                                android:textOn="@string/str_rebuild" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_changeable_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbChangeablePossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_changeable"
+                                android:textOn="@string/str_changeable" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_right_possibilities"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:layout_weight="0.3"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical">
+
+                            <ToggleButton
+                                android:id="@+id/tgb_camera_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbCameraPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_camera"
+                                android:textOn="@string/str_camera" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_video_iphone_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbVideoIphonePossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_video_iphon"
+                                android:textOn="@string/str_video_iphon" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_central_antenna_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:layout_marginBottom="@dimen/margin5dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbCentralAntennaPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_central_antenna"
+                                android:textOn="@string/str_central_antenna" />
+
+                            <ToggleButton
+                                android:id="@+id/tgb_balcony_possibilities"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_40_dp"
+                                android:background="@drawable/round_background"
+                                android:checked="@={groups.tgbBalconyPossibilitiesValue}"
+                                android:textColor="@drawable/tgb_on_mode_text_color"
+                                android:textOff="@string/str_balcony"
+                                android:textOn="@string/str_balcony" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_some_possibilities-->
+                <LinearLayout
+                    android:id="@+id/ll_loan_since_dung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/sw_has_a_loan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="@={groups.swHasLoanValue}" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_loan" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/str_available_loan" />
+                    </LinearLayout><!--TODO ll_has_a_loan-->
+                    <EditText
+                        android:id="@+id/edt_amount_loan"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:gravity="center"
+                        android:hint="@string/str_enter_loan_value"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:padding="10dp"
+                        android:text="@={groups.edtAmountLoanValue}"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_since_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:gravity="right"
+                            android:text="@string/str_since_quantity" />
+
+                        <EditText
+                            android:id="@+id/edt_since_quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40_dp"
+                            android:background="@drawable/round_background"
+                            android:hint="@string/str_enter_since_quantity"
+                            android:inputType="number"
+                            android:maxLength="9"
+                            android:padding="10dp"
+                            android:text="@={groups.edtSinceQuantityValue}"
+                            android:textAlignment="center"
+                            tools:ignore="Autofill" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_nuber_of_dung_for_sell" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_dung_for_sell"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpDungForSellValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_dung_for_sell" />
+                    </LinearLayout><!--TODO ll_dung_for_sell-->
+                </LinearLayout><!--TODO ll_loan_since_dung-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_elevator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_elevator" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_elevator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpDungForSellValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_elevator" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_elevator-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_bathroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_bathroom" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_bath_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfBathRoomValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_elevator" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_bathroom-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_parking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_parking" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_parking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfParkingValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_elevator" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_parking-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_kitchen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_kitchen" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_kitchen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfKitchenValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_kitchen" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_kitchen-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_master_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_masterRoom" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_master_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfMasterRoomValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_kitchen" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_master_room-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_iranian_toilet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_iran_toilet" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_iranian_toilet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfIranianToiletValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_kitchen" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_iranian_toilet-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_farangi_toilet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_number_of_foreign_toilet" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_farangi_toilet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfFarangiToiletValue}"
+                            app:values="@array/arr_number_of_kitchen" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_farangi_toilet-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_special_feature"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_special_feature"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/plus"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin5dp"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/str_select_sp_possibilities" />
+                </RelativeLayout><!--TODO ll_plus_special_feature-->
+                <LinearLayout
+                    android:id="@+id/ll_amount_mount_charge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_month_charge_value" />
+
+                    <EditText
+                        android:id="@+id/edt_amount_mount_charge"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:hint="@string/str_enter_month_charge_value"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:padding="10dp"
+                        android:text="@={groups.edtAmountMountChargeValue}"
+                        android:textAlignment="center" />
+                </LinearLayout><!--TODO ll_amount_mount_charge-->
+                <LinearLayout
+                    android:id="@+id/ll_geo_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_geo_position" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_west_geo_position"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbWestGeoPositionValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_west"
+                            android:textOn="@string/str_west" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_est_geo_position"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbEstGeoPositionValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_est"
+                            android:textOn="@string/str_est" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_south_geo_position"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbSouthGeoPositionValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_south"
+                            android:textOn="@string/str_south" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_north_geo_position"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbNorthGeoPositionValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_north"
+                            android:textOn="@string/str_north" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_geo_position-->
+                <LinearLayout
+                    android:id="@+id/ll_structure_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_structure_type" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_blots_nuts_struct_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbBlotsButsStructTypeValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_blots_nuts"
+                            android:textOn="@string/str_blots_nuts" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_metal_struct_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbMetalStructTypeValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_metal"
+                            android:textOn="@string/str_metal" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_concrete_and_bar_struct_type"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbWestGeoPositionValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_concrete_and_bar"
+                            android:textOn="@string/str_concrete_and_bar" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_structure_type-->
+                <LinearLayout
+                    android:id="@+id/ll_lighting_direct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_lighting_direct" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_west_lighting_direct"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbWestLightingDirectValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_west"
+                            android:textOn="@string/str_west" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_est_lighting_direct"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbEstLightingDirectValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_est"
+                            android:textOn="@string/str_est" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_sought_lighting_direct"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/tgb_background"
+                            android:checked="@={groups.tgbSouthtLightingDirectValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_south"
+                            android:textOn="@string/str_south" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_north_lighting_direct"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbNorthLightingDirectValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_north"
+                            android:textOn="@string/str_north" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_lighting_direct-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_roof_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_number_of_roof_space" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_roof_space"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfRoofSpaceValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_elevator" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_roof_space-->
+                <LinearLayout
+                    android:id="@+id/ll_ceiling_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_ceiling_height" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_height_of_the_ceiling"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpHeightOfTheCeilingValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_height_of_the_ceiling" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_ceiling_height-->
+                <LinearLayout
+                    android:id="@+id/ll_melk_width"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_melk_with" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_melk_width"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpMelkWidthValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_melk_width" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_melk_width-->
+                <LinearLayout
+                    android:id="@+id/ll_goodwill_and_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_goodwill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_left_tg_background"
+                        android:checked="@={groups.tgbGoodwillValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_goodwill"
+                        android:textOn="@string/str_goodwill" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_property"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_right_tg_background"
+                        android:checked="@={groups.tgbPropertyValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_property"
+                        android:textOn="@string/str_property" />
+                </LinearLayout><!--TODO ll_goodwill_and_property-->
+                <LinearLayout
+                    android:id="@+id/ll_electric_meter_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_electric_meter_type" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_three_phase_electric"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbThreePhaseElectricValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_three_phase"
+                            android:textOn="@string/str_three_phase" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_one_phase_electric"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbOnePhaseElectricValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_one_phase"
+                            android:textOn="@string/str_one_phase" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_electric_meter_type-->
+                <LinearLayout
+                    android:id="@+id/ll_share_and_private_electric_meter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_share_electric"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_left_tg_background"
+                        android:checked="@={groups.tgbShareElectricValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_share"
+                        android:textOn="@string/str_share" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_private_electric"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_right_tg_background"
+                        android:checked="@={groups.tgbPrivateElectricValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_private"
+                        android:textOn="@string/str_private" />
+                </LinearLayout><!--TODO ll_share_and_private_electric_meter-->
+                <LinearLayout
+                    android:id="@+id/ll_gas_meter_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_gas_meter_type" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_share_gas_meter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbShareGasMeterValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_share"
+                            android:textOn="@string/str_share" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_private_gas_meter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbPrivateGasMeterValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_private"
+                            android:textOn="@string/str_private" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_gas_meter_type-->
+                <LinearLayout
+                    android:id="@+id/ll_water_meter_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_water_meter_type" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_share_water_meter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbShareWaterMeterValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_share"
+                            android:textOn="@string/str_share" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_private_water_meter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbPrivateWaterMeterValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_private"
+                            android:textOn="@string/str_private" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_water_meter_type-->
+                <LinearLayout
+                    android:id="@+id/ll_max_allowed_and_convertible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_convertible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tgb_changeable_to_rent"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_left_tg_background"
+                            android:checked="@={groups.tgbChangeableToRentValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_convertable_to_rent"
+                            android:textOn="@string/str_convertable_to_rent" />
+
+                        <ToggleButton
+                            android:id="@+id/tgb_changeable_to_rahn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rounded_right_tg_background"
+                            android:checked="@={groups.tgbChangeableToRahnValue}"
+                            android:textColor="@drawable/tgb_on_mode_text_color"
+                            android:textOff="@string/str_convertable_to_rahn"
+                            android:textOn="@string/str_convertable_to_rahn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_max_allowed_for_residences"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:gravity="right"
+                            android:text="@string/str_max_allowed_for_residences" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_40_dp"
+                            android:background="@drawable/round_background"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                                android:id="@+id/hp_max_allowed_for_residences"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="-1"
+                                android:textColor="@color/text_color"
+                                android:textSize="14sp"
+                                app:dividerSize="25dp"
+                                app:selectedPosition="@={groups.hpMaxAllowedForResidencesValue}"
+                                app:sideItems="@integer/numSideItems"
+                                app:values="@array/arr_number_of_owners" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_max_allowed_and_convertible-->
+                <LinearLayout
+                    android:id="@+id/ll_number_of_tel_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_number_of_tel_sub" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_number_of_tell_sub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpNumberOfTellSubValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_number_of_tel_line" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_number_of_tel_sub-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_melk_doc_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_type_of_melk_document"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:id="@+id/txt_plus_melk_doc_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_melk_doc_type" />
+                </RelativeLayout><!--TODO ll_plus_melk_doc_type-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_cooling_healing_system"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_cooling_healing_system"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_cooling_healing_system" />
+                </RelativeLayout><!--TODO ll_plus_cooling_healing_system-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_floor_cover_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_floor_covering"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_floor_cover_type" />
+                </RelativeLayout><!--TODO ll_plus_floor_cover_type-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_building_facades"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_building_facades"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_building_facade" />
+                </RelativeLayout><!--TODO ll_plus_building_facades-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_kitchen_cabinets"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_kitchen_cabinets"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_kitchen_cabinet" />
+                </RelativeLayout><!--TODO ll_plus_kitchen_cabinets-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_windows_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_windows_type"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_windows_type" />
+                </RelativeLayout><!--TODO ll_plus_windows_type-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_building_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_building_type"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_type_of_building" />
+                </RelativeLayout><!--TODO ll_plus_building_type-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_melk_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_view"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_landscape" />
+                </RelativeLayout><!--TODO ll_melk_view-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_type_of_rooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_room_type"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_type_of_rooms" />
+                </RelativeLayout><!--TODO ll_plus_type_of_rooms-->
+                <RelativeLayout
+                    android:id="@+id/rl_plus_furnished_facilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40_dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_background"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <Button
+                        android:id="@+id/btn_plus_furnished_facilities"
+                        android:layout_width="@dimen/height_12_dp"
+                        android:layout_height="@dimen/height_12_dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_furnished_facilities" />
+                </RelativeLayout><!--TODO ll_plus_furnished_facilities-->
+                <LinearLayout
+                    android:id="@+id/ll_distance_to_public_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:gravity="right"
+                        android:text="@string/str_distance_to_public_vehicle" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40_dp"
+                        android:background="@drawable/round_background"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.hekatomsoft.androidcor.bottombarfragment.googlemap.HorizontalPicker
+                            android:id="@+id/hp_distance_to_vehicle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:marqueeRepeatLimit="-1"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp"
+                            app:dividerSize="25dp"
+                            app:selectedPosition="@={groups.hpDistanceToVehicleValue}"
+                            app:sideItems="@integer/numSideItems"
+                            app:values="@array/arr_distance_with_public_vehicle" />
+                    </LinearLayout>
+                </LinearLayout><!--TODO ll_distance_to_public_vehicle-->
+                <LinearLayout
+                    android:id="@+id/ll_more_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin5dp"
+                        android:text="@string/str_more_info" />
+
+                    <EditText
+                        android:id="@+id/edt_more_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/round_background"
+                        android:gravity="right|top"
+                        android:hint="@string/str_melk_info"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:padding="10dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:text="@={groups.edtMoreInfoValue}" />
+                </LinearLayout><!--TODO ll_more_info-->
+                <LinearLayout
+                    android:id="@+id/ll_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="right"
+                        android:text="@string/str_gallery" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="72dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_melk_number1"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/ic_home_black_24dp"
+                                android:contentDescription="@string/todo"
+                                android:scaleType="fitCenter" />
+
+                            <ImageView
+                                android:id="@+id/img_melk_number2"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_marginRight="8dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/ic_home_black_24dp"
+                                android:contentDescription="@string/todo"
+                                android:scaleType="fitCenter" />
+
+                            <ImageView
+                                android:id="@+id/img_melk_number3"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/ic_home_black_24dp"
+                                android:contentDescription="@string/todo" />
+
+                            <ImageView
+                                android:id="@+id/img_melk_number4"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_marginRight="8dp"
+                                android:background="@drawable/ic_home_black_24dp"
+                                android:contentDescription="@string/todo" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout><!--TODO ll_gallery-->
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</layout>

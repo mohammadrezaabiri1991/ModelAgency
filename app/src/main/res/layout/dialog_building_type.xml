@@ -1,0 +1,135 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="buildingType"
+            type="com.hekatomsoft.androidcor.bottombarfragment.googlemap.Group" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/parent_building_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fafafa"
+            android:gravity="center"
+            android:text="@string/building_type_str" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin8dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_building_type_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16dp"
+                    android:layout_marginRight="@dimen/margin4dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ToggleButton
+                        android:id="@+id/tgb_tower_building_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={buildingType.tgbTowerBuildingTypeValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_tower"
+                        android:textOn="@string/str_tower" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_villa_building_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={buildingType.tgbVillaBuildingTypeValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_villa"
+                        android:textOn="@string/str_villa" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_building_type_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin4dp"
+                    android:layout_marginRight="@dimen/margin16dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tgb_integrated_building_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={buildingType.tgbIntegratedBuildingTypeValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_integrated"
+                        android:textOn="@string/str_integrated" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_passage_building_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={buildingType.tgbPassageBuildingTypeValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_passage"
+                        android:textOn="@string/str_passage" />
+
+                    <ToggleButton
+                        android:id="@+id/tgb_apartment_building_type"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin8dp"
+                        android:background="@drawable/round_background_toggle_buttons"
+                        android:orientation="vertical"
+                        android:checked="@={buildingType.tgbApartmentBuildingTypeValue}"
+                        android:textColor="@drawable/tgb_on_mode_text_color"
+                        android:textOff="@string/str_apartment"
+                        android:textOn="@string/str_apartment" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm_dialog_building_type"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_confirm" />
+
+    </LinearLayout>
+</layout>
